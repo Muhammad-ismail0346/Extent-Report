@@ -1,0 +1,21 @@
+name: Deploy Extent Reports
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Run Extent Report Deployer
+      uses: ./  # Use the action defined in the repository
+      with:
+        branch: main
+        folder: ./build
