@@ -34,4 +34,4 @@ jobs:
       uses: Muhammad-ismail0346/Extent-Report@main
       with:
         branch: main
-        folder: ./Extent-Report
+        folder: ../
