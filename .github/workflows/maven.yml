@@ -31,7 +31,7 @@ jobs:
       run: mvn clean test
  
     - name: Deploy pages
-      uses: Muhammad-ismail0346/Extent-Report@2.4.1
+      uses: Muhammad-ismail0346/Extent-Report@main
       with:
         branch: main
         folder: ./Extent-Report
