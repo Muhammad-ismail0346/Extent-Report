@@ -13,6 +13,7 @@ runs:
   using: "composite"
   steps:
     - name: Deploying Reports
+      shell: bash  # Specify shell here
       run: |
         echo "Deploying reports from folder ${{ inputs.folder }} to branch ${{ inputs.branch }}"
         # Add deployment logic here
